@@ -1,28 +1,24 @@
-
-
-*{
+* {
   padding: 0;
-  margin: 0; 
+  margin: 0;
   box-sizing: border-box;
+}
+body {
   font-size: 16px;
-}
-body{
-   display: grid;
-   grid-template-areas: 
-   "header"
-   "content"
-   "footer";
-   height: 2000px;
-   grid-template-rows: 100px 1fr 400px;
-   line-height: 1.5;
-
+  display: grid;
+  grid-template-areas:
+    "header"
+    "content"
+    "footer";
+  height: 2000px;
+  grid-template-rows: 100px 1fr 400px;
+  line-height: 1.5;
 }
 
-#content{
-   display: grid;
-   grid-template-rows: 3fr 7fr ;
-   background: lightgrey;
-
+#content {
+  display: grid;
+  grid-template-rows: 3fr 7fr;
+  background: lightgrey;
 }
 
 .sidebar {
@@ -37,7 +33,6 @@ body{
   transition: 0.5s;
   padding-top: 60px;
   border: 1px dotted black;
-  
 }
 
 .sidebar a {
@@ -56,28 +51,27 @@ body{
 /*Hover effekter til sidebar*/
 
 #welcome:hover {
-   background-color: white;
-   color:  #99bbff;
+  background-color: white;
+  color: #99bbff;
 }
 #reflectionessay:hover {
-   background-color: white;
-   color:  #99bbff;
+  background-color: white;
+  color: #99bbff;
 }
 #accessibility:hover {
-   background-color: white;
-   color:  #99bbff;
+  background-color: white;
+  color: #99bbff;
 }
 #topicalinfo:hover {
-   background-color: white;
-   color:  #99bbff;
+  background-color: white;
+  color: #99bbff;
 }
 #fun:hover {
-   background-color: white;
-   color:  #99bbff;
+  background-color: white;
+  color: #99bbff;
 }
 
 /*Hover effekter til sidebar slutt*/
-
 
 .sidebar .closebtn {
   position: absolute;
@@ -86,8 +80,8 @@ body{
   font-size: 36px;
   margin-left: 50px;
 }
-#mySidebar ul li a:hover{
-  background:#ff6e00;
+#mySidebar ul li a:hover {
+  background: #ff6e00;
   border-radius: 2px;
 }
 
@@ -114,128 +108,116 @@ body{
   background-color: #99bbff;
   min-height: 103px;
 }
-.logo{
-    position: fixed;
-    display: block;
-    max-width: 125px;
-    display: inline;
-    right: 5px;
-    top: 5px;
-
-    
+.logo {
+  position: fixed;
+  display: block;
+  max-width: 125px;
+  display: inline;
+  right: 5px;
+  top: 5px;
 }
-.header{
-    grid-area: header;
-    position: fixed;
-    top: 0px;
-    width: 100%;
-   
-    z-index: 99;
-    display: flex;
-    
+.header {
+  grid-area: header;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+
+  z-index: 99;
+  display: flex;
 }
 
-.intro{
-  
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   position: relative;
-   background: grey;
-     
+.intro {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  background: grey;
 }
-.intro:before{
-   content: '';
-   background: url(./images/1homepage.jpg) no-repeat center center/cover;
-   opacity: 0.4;
-   position: absolute;
-   top:0;
-   left: 0;
-   width: 100%;
-   height: 100%;
+.intro:before {
+  content: "";
+  background: url(./images/1homepage.jpg) no-repeat center center/cover;
+  opacity: 0.4;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
-
-
-             
-.article{
-   display: grid;
-   grid-template-columns: repeat(3,1fr);
-   grid-template-rows: 50px 2fr 3fr 2fr;
-   grid-gap: 1rem;
-   margin-left: 10vw;
-   margin-right: 10vw;
-   border: none;
-   margin-bottom: 1rem;
+.article {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 50px 2fr 3fr 2fr;
+  grid-gap: 1rem;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  border: none;
+  margin-bottom: 1rem;
 }
-.article > div:nth-child(1){
-   grid-column: 1/span 3;
+.article > div:nth-child(1) {
+  grid-column: 1 / span 3;
 }
-.article > div:nth-child(2){
-   grid-column: 1/span 2;
-   display: flex;
-   flex-direction: row;
-   align-items: center;
+.article > div:nth-child(2) {
+  grid-column: 1 / span 2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
-.article > div:last-child{
-   grid-column-start: 4 ;
-   grid-column-end: 2;
-   display: flex;
-   flex-direction: row;
-   align-items: center;
+.article > div:last-child {
+  grid-column-start: 4;
+  grid-column-end: 2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
-.article > div:nth-child(3){
-   background: rgb(53, 51, 51);
-   border-radius: 0 2rem 0 2rem;
-   color: white;
+.article > div:nth-child(3) {
+  background: rgb(53, 51, 51);
+  border-radius: 0 2rem 0 2rem;
+  color: white;
 }
-.article > div:nth-child(7){
-   background: rgb(202, 81, 81);
-   border-radius:  2rem 0 2rem 0 ;
-   color: white;
+.article > div:nth-child(7) {
+  background: rgb(202, 81, 81);
+  border-radius: 2rem 0 2rem 0;
+  color: white;
 }
-.article > div{
-   border: none;
-   background: white;
-   display: flex;
-   flex-direction: column;
-   padding: 0.5rem;
-   
+.article > div {
+  border: none;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
 }
 /*<------WELCOME---------->*/
-.article .contentTittel{
-   background: none;
-   padding: 20px 30px;
-
+.article .contentTittel {
+  background: none;
+  padding: 20px 30px;
 }
-.article .contentTittel h3{
-   font-size: 2rem;
-   font-weight: bolder;
+.article .contentTittel h3 {
+  font-size: 2rem;
+  font-weight: bolder;
 }
 
-.article .contentBox img{
+.article .contentBox img {
   height: 260px;
-
 }
-.article .contentBox .boxInclusive{
-   border: none;
-   background: none;
-   margin: 0.75rem;
-   height: 100%;
+.article .contentBox .boxInclusive {
+  border: none;
+  background: none;
+  margin: 0.75rem;
+  height: 100%;
 }
-   .article .contentBox .boxInclusive h5{
-       margin-bottom: 40px;
-width: 100%;
-display: flex;
-justify-content: center;
-align-items: center;
-background: linear-gradient;
-font-family: 'Oswald', sans-serif;
-   
+.article .contentBox .boxInclusive h5 {
+  margin-bottom: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient;
+  font-family: "Oswald", sans-serif;
 }
-.article,a{
+.article,
+a {
   text-decoration: none;
-
 }
 .article .contentBox .button h5 {
   margin: auto;
@@ -260,56 +242,55 @@ font-family: 'Oswald', sans-serif;
   border-radius: 4px;
 }
 
-
-    
-    .article .contentBox .button h5:hover {
-      background: #fff;
-      box-shadow: 0px 2px 10px 5px #66bbff;
-      color: #000;
-    }
-    
-    .article .contentBox .button h5:after {
-      content: "";
-      background: #66bbff;
-      display: block;
-      position: absolute;
-      padding-top: 300%;
-      padding-left: 350%;
-      margin-left: -20px !important;
-      margin-top: -120%;
-      opacity: 0;
-      transition: all 0.8s
-    }
-    
-    .article .contentBox .button h5:active:after {
-      padding: 0;
-      margin: 0;
-      opacity: 1;
-      transition: 0s
-    }
-    
-    .article .contentBox .button h5:focus { outline:0; }
-.article .contentBox h3{
-   font-size: 1.5rem;
-   margin:  0.5rem 0.25rem;
+.article .contentBox .button h5:hover {
+  background: #fff;
+  box-shadow: 0px 2px 10px 5px #66bbff;
+  color: #000;
 }
 
+.article .contentBox .button h5:after {
+  content: "";
+  background: #66bbff;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+.article .contentBox .button h5:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}
+
+.article .contentBox .button h5:focus {
+  outline: 0;
+}
+.article .contentBox h3 {
+  font-size: 1.5rem;
+  margin: 0.5rem 0.25rem;
+}
 
 /*CSS til reflection essay page*/
 .essaytext {
-   margin-left: 5%;
-   margin-right: 5%;
-   margin-top: 30px;
-   line-height: 1.5;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 30px;
+  line-height: 1.5;
 }
 
 #headingessay {
-   text-align: center;
-   font-size: 45px;
+  text-align: center;
+  font-size: 45px;
 }
 
 h2 {
-   font-size: 21px;
+  font-size: 21px;
 }
 
 .avsnitt1 {
@@ -321,373 +302,387 @@ h2 {
 }
 
 .avsnitt2 {
-   padding: 24px;
-   width: 100%;
-   background-color: #99bbff;
-   display: grid;
+  padding: 24px;
+  width: 100%;
+  background-color: #99bbff;
+  display: grid;
   grid-template-columns: repeat(2, 1fr);
- }
+}
 
- .avsnitt3 {
-   padding: 24px;
-   width: 100%;
-   background-color: #99bbff;
-   display: grid;
+.avsnitt3 {
+  padding: 24px;
+  width: 100%;
+  background-color: #99bbff;
+  display: grid;
   grid-template-columns: repeat(2, 1fr);
- }
+}
 
- .avsnitt4 {
-   padding: 24px;
-   width: 100%;
-   background-color: #99bbff;
-   display: grid;
+.avsnitt4 {
+  padding: 24px;
+  width: 100%;
+  background-color: #99bbff;
+  display: grid;
   grid-template-columns: repeat(2, 1fr);
- }
+}
 
- .bildeavsnitt1 {
-    margin-right: 5px;
-    margin-left: 5px;
-    margin-bottom: 5px;
-    height: auto;
-    max-height: 90%;
-    max-width: 90%;
-    margin-left: auto;
+.bildeavsnitt1 {
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  height: auto;
+  max-height: 90%;
+  max-width: 90%;
+  margin-left: auto;
   margin-right: auto;
- }
+}
 
- .bildeavsnitt2 {
-   margin-right: 10px;
-   margin-left: 5px;
-   margin-bottom: 5px;
-   width: 400px;
-   height: auto;
-   max-height: 90%;
-   max-width: 90%;
-   margin-left: auto;
+.bildeavsnitt2 {
+  margin-right: 10px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  width: 400px;
+  height: auto;
+  max-height: 90%;
+  max-width: 90%;
+  margin-left: auto;
   margin-right: auto;
 }
 
 .bildeavsnitt3 {
-   margin-right: 5px;
-   margin-left: 5px;
-   margin-bottom: 5px;
-   width: 400px;
-   height: auto;
-   max-height: 90%;
-   max-width: 90%;
-   margin-left: auto;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  width: 400px;
+  height: auto;
+  max-height: 90%;
+  max-width: 90%;
+  margin-left: auto;
   margin-right: auto;
 }
 
 .bildeavsnitt4 {
-   margin-right: 10px;
-   margin-left: 5px;
-   margin-bottom: 5px;
-   width: 400px;
-   height: auto;
-   max-height: 90%;
-   max-width: 90%;
-   margin-left: auto;
+  margin-right: 10px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  width: 400px;
+  height: auto;
+  max-height: 90%;
+  max-width: 90%;
+  margin-left: auto;
   margin-right: auto;
 }
 /*CSS til reflection essay page slutt*/
 
-
-
-
-
-
-
-
-
-
-
-
-@media  screen and  (max-width:500px){
-   
-   
-   body{
-       display: grid;
-       height: auto;
-       grid-template-columns: 1fr;
-       grid-template-rows: 100px 1fr auto;
-
-   }
-   #content{
-      grid-area: content;
-      display: grid;
-width: 100%;
-      height: 80%;
-  
- 
+@media screen and (max-width: 500px) {
+  body {
+    display: grid;
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr auto;
   }
-  .intro{
-   display: flex;
-   flex-direction: column;
-  
-     
-}
+  #content {
+    grid-area: content;
+    display: grid;
+    width: 100%;
+    height: 80%;
+  }
+  .intro {
+    display: flex;
+    flex-direction: column;
+  }
 
-.article{
-   display: grid;
-   grid-template-columns: repeat(1,1fr);
-   grid-template-rows: repeat(7,auto);
-   grid-gap: 1rem;
-   margin-left: 1vw;
-   margin-right: 1vw;
-   border: none;
-   margin-bottom: 1rem;
-}
-.article > div:nth-child(1){
-   grid-column: 1/span 1;
-}
-.article > div:nth-child(2){
-   grid-column: 1/span 1;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-}
-.article > div:last-child{
-   grid-column-start: 1 ;
-   grid-column-end: 2;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
+  .article {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(7, auto);
+    grid-gap: 1rem;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    border: none;
+    margin-bottom: 1rem;
+  }
+  .article > div:nth-child(1) {
+    grid-column: 1 / span 1;
+  }
+  .article > div:nth-child(2) {
+    grid-column: 1 / span 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .article > div:last-child {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .article .contentBox img {
+    height: 260px;
+    width: 100%;
+  }
 
-}
+  .article .contentBox h5 {
+    display: block;
+    width: 70%;
+    padding: 0.25rem 1rem;
+    border-radius: 1rem;
+  }
+  .article .contentBox h3 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0.25rem;
+  }
 
-
-.article .contentBox img{
-   height: 260px;
-   width: 100%;
-   
-}
-
-
-.article .contentBox h5{
-   display: block;
-   width: 70%;
-   padding: 0.25rem 1rem;
-   border-radius: 1rem;
-}
-.article .contentBox h3{
-   font-size: 1.5rem;
-   margin: 0.5rem 0.25rem;
-}
-
-.avsnitt1 {
-   padding: 24px;
-   width: 100%;
-   background-color: #99bbff;
-   display: grid;
-   grid-template-columns: repeat(1, 1fr);
- }
- 
- .avsnitt2 {
+  .avsnitt1 {
     padding: 24px;
     width: 100%;
     background-color: #99bbff;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
- }
- 
+  }
+
+  .avsnitt2 {
+    padding: 24px;
+    width: 100%;
+    background-color: #99bbff;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
   .avsnitt3 {
     padding: 24px;
     width: 100%;
     background-color: #99bbff;
     display: grid;
-   grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
- 
+
   .avsnitt4 {
     padding: 24px;
     width: 100%;
     background-color: #99bbff;
     display: grid;
-   grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 
-
-.bildeavsnitt1 {
-   margin-right: 5px;
-   margin-left: 5px;
-   margin-bottom: 5px;
-   width: 250px;
-   height: auto;
-   
-}
-
-.bildeavsnitt2 {
-  margin-right: 10px;
-  margin-left: 5px;
-  margin-bottom: 5px;
-  width: 250px;
-  height: auto;
-}
-
-.bildeavsnitt3 {
-  margin-right: 5px;
-  margin-left: 5px;
-  margin-bottom: 5px;
-  width: 250px;
-  height: auto;
-}
-
-.bildeavsnitt4 {
-  margin-right: 10px;
-  margin-left: 5px;
-  margin-bottom: 5px;
-  width: 250px;
-  height: auto;
-}
-
-}
-
-@media  only screen and  (max-width:800px) and (min-width:501px){
-   body{
-      display: grid;
-
-      height: auto;
-      grid-template-columns: 1fr;
-      grid-template-rows: 100px 1fr auto;
- 
+  .bildeavsnitt1 {
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    width: 250px;
+    height: auto;
   }
 
-   #content{
-      grid-area: content;
-      display: grid;
-    
+  .bildeavsnitt2 {
+    margin-right: 10px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    width: 250px;
+    height: auto;
+  }
 
-      width: 100%;
-      height: 80%;
- 
-  
+  .bildeavsnitt3 {
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    width: 250px;
+    height: auto;
+  }
 
- }
- .intro{
+  .bildeavsnitt4 {
+    margin-right: 10px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    width: 250px;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 800px) and (min-width: 501px) {
+  body {
+    display: grid;
+
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr auto;
+  }
+
+  #content {
+    grid-area: content;
+    display: grid;
+
+    width: 100%;
+    height: 80%;
+  }
+  .intro {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .article {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    grid-template-rows: repeat(5, auto);
+    grid-gap: 1rem;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    border: none;
+    margin-bottom: 1rem;
+  }
+  .article > div:nth-child(1) {
+    grid-column: 1 / span 2;
+  }
+  .article > div:nth-child(2) {
+    grid-column: 1 / span 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .article > div:last-child {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .article .contentBox img {
+    height: 260px;
+    width: 100%;
+  }
+
+  .article .contentBox h5 {
+    display: block;
+    width: 70%;
+    padding: 0.25rem 1rem;
+    border-radius: 1rem;
+  }
+  .article .contentBox h3 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0.25rem;
+  }
+  .article .contentBox img {
+    height: 260px;
+    width: 100%;
+  }
+
+  .avsnitt1 {
+    padding: 24px;
+    width: 100%;
+    background-color: #99bbff;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .avsnitt2 {
+    padding: 24px;
+    width: 100%;
+    background-color: #99bbff;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .avsnitt3 {
+    padding: 24px;
+    width: 100%;
+    background-color: #99bbff;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .avsnitt4 {
+    padding: 24px;
+    width: 100%;
+    background-color: #99bbff;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .bildeavsnitt1 {
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    width: 250px;
+    height: auto;
+  }
+
+  .bildeavsnitt2 {
+    margin-right: 10px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    width: 250px;
+    height: auto;
+  }
+
+  .bildeavsnitt3 {
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    width: 250px;
+    height: auto;
+  }
+
+  .bildeavsnitt4 {
+    margin-right: 10px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    width: 250px;
+    height: auto;
+  }
+}
+
+/***************
+FOOTER
+***************/
+
+footer {
+  position: relative;
   display: flex;
   flex-direction: column;
- 
-    
-}
-
-.article{
-  display: grid;
-  grid-template-columns: repeat(2,minmax(250px,1fr));
-  grid-template-rows: repeat(5,auto);
-  grid-gap: 1rem;
-  margin-left: 1vw;
-  margin-right: 1vw;
-  border: none;
-  margin-bottom: 1rem;
-}
-.article > div:nth-child(1){
-  grid-column: 1/span 2;
-}
-.article > div:nth-child(2){
-  grid-column: 1/span 1;
-  display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-}
-.article > div:last-child{
-  grid-column-start: 1 ;
-  grid-column-end: 3;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-
-
-}
-
-
-.article .contentBox img{
-  height: 260px;
   width: 100%;
-  
+  background: #99bbff;
+  height: 200px;
+  padding: 20px 50px;
 }
 
-
-.article .contentBox h5{
-  display: block;
-  width: 70%;
-  padding: 0.25rem 1rem;
-  border-radius: 1rem;
+footer .SoMe,
+footer .foot_menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
 }
-.article .contentBox h3{
+
+footer .SoMe li,
+footer .foot_menu li {
+  list-style: none;
+}
+
+footer .SoMe li a {
+  font-size: 2rem;
+  color: #f4f4f4;
+  margin: 0 0.7rem;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+footer .SoMe li a:hover {
+  transform: translateY(-7px);
+}
+
+footer .foot_menu li a {
   font-size: 1.5rem;
-  margin: 0.5rem 0.25rem;
+  color: #f4f4f4;
+  margin: 0 0.5rem;
+  display: inline-block;
+  text-decoration: none;
+  opacity: 0.7;
 }
-.article .contentBox img{
-   height: 260px;
-width: 100%;
-}
-
-.avsnitt1 {
-   padding: 24px;
-   width: 100%;
-   background-color: #99bbff;
-   display: grid;
-   grid-template-columns: repeat(1, 1fr);
- }
- 
- .avsnitt2 {
-    padding: 24px;
-    width: 100%;
-    background-color: #99bbff;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
- }
- 
-  .avsnitt3 {
-    padding: 24px;
-    width: 100%;
-    background-color: #99bbff;
-    display: grid;
-   grid-template-columns: repeat(1, 1fr);
-  }
- 
-  .avsnitt4 {
-    padding: 24px;
-    width: 100%;
-    background-color: #99bbff;
-    display: grid;
-   grid-template-columns: repeat(1, 1fr);
-  }
-
-
-.bildeavsnitt1 {
-   margin-right: 5px;
-   margin-left: 5px;
-   margin-bottom: 5px;
-   width: 250px;
-   height: auto;
-   
-}
-
-.bildeavsnitt2 {
-  margin-right: 10px;
-  margin-left: 5px;
-  margin-bottom: 5px;
-  width: 250px;
-  height: auto;
-}
-
-.bildeavsnitt3 {
-  margin-right: 5px;
-  margin-left: 5px;
-  margin-bottom: 5px;
-  width: 250px;
-  height: auto;
-}
-
-.bildeavsnitt4 {
-  margin-right: 10px;
-  margin-left: 5px;
-  margin-bottom: 5px;
-  width: 250px;
-  height: auto;
-}
-
+footer .foot_menu li a:hover {
+  opacity: 100;
 }
